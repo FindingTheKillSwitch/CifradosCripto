@@ -54,7 +54,7 @@ def descifrar(texto_cifrado):#Descifrado Homofonico
         if num.isdigit() and int(num) in tabla_inversa:
             descifrado += tabla_inversa[int(num)]
         else:
-            descifrado += num  # Mantener espacios y signos
+            descifrado += num
 
     return descifrado
 
