@@ -263,21 +263,6 @@ def encriptar_DES(plaintext, key):
 
     return bits_finales
 
-#Parametros para ejecutar la encriptacion
-
-# Prueba con texto de 8 caracteres
-'''texto = "VIRIDIAN"  # 64 bits
-key = "12345678"        # 64 bits
-
-bits_cifrados = encriptar_DES(texto, key)
-hex_cifrado = ''.join(f'{b:01x}' for b in bits_cifrados)
-
-print("Texto cifrado (bits):", bits_cifrados)
-print("Texto cifrado (hex):", hex_cifrado)'''
-
-# 8 caracteres = 64 bits plaintext = "CRIPTO12"
-# key = "12345678"        # 8 caracteres = 64 bits
-
 # Asegúrate de que ambas entradas son de 8 caracteres
 if len(mensaje) != 8 or len(key) != 8:
     raise ValueError("El texto y la llave deben tener exactamente 8 caracteres (64 bits).")
